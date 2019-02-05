@@ -1,0 +1,16 @@
+{
+  "name": "language-github-actions",
+  "version": "0.0.0",
+  "description": "Syntax highlighting for GitHub Actions workflow files.",
+  "keywords": [
+    "actions",
+    "github",
+    "grammar",
+    "language"
+  ],
+  "repository": "https://github.com/phyllisstein/language-github-actions",
+  "license": "GPL-3.0",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

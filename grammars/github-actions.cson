@@ -1,0 +1,49 @@
+'scopeName': 'source.github-actions'
+'name': 'GitHub Actions'
+'fileTypes': [
+  'workflow'
+]
+'patterns': [
+  {
+    'include': '#comments'
+  }
+  {
+    'include': '#keywords'
+  }
+  {
+    'include': '#strings'
+  }
+]
+'repository':
+  'comments':
+    'patterns': [
+      {
+        'name': 'comment.line.number-sign.github-actions'
+        'match': '#.*'
+      }
+    ]
+  'keywords':
+    'patterns': [
+      {
+        'name': 'support.class.github-actions'
+        'match': '\\b(action|workflow)\\b'
+      }
+      {
+        'name': 'support.variable.control.gihub-actions'
+        'match': '\\b(on|resolves|needs|uses|runs|args|env|secrets)\\b'
+      }
+    ]
+  'strings':
+    'patterns': [
+      {
+        'name': 'string.quoted.double.github-actions'
+        'begin': '"'
+        'end': '"'
+        'patterns': [
+          {
+            'name': 'constant.character.escape.github-actions'
+            'match': '\\\\.'
+          }
+        ]
+      }
+    ]
